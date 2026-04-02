@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitch Cahill — Finance & Technology</title>
+  <meta name="description" content="Portfolio of Mitch Cahill — Finance and Data Science student at NYU Stern with experience in equity research, VC analysis, and product management.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230A1628'/><text y='72' x='50' text-anchor='middle' font-family='serif' font-size='62' font-weight='bold' fill='%23D4A84B'>M</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,700;1,9..144,800;1,9..144,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-initials">MC</span>
+        <span class="logo-dot"></span>
+      </a>
+      <div class="nav-links">
+        <a href="#experience"  class="nav-link">Experience</a>
+        <a href="#leadership"  class="nav-link">Leadership</a>
+        <a href="#education"   class="nav-link">Education</a>
+        <a href="#works"       class="nav-link">Works</a>
+      </div>
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">Connect</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-drawer hidden" id="nav-drawer">
+      <a href="#experience"  class="drawer-link">Experience</a>
+      <a href="#leadership"  class="drawer-link">Leadership</a>
+      <a href="#education"   class="drawer-link">Education</a>
+      <a href="#works"       class="drawer-link">Works</a>
+      <a href="#contact"     class="drawer-link">Connect</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ EDIT TOOLBAR ═══════════════ -->
+  <div id="edit-toolbar" class="edit-toolbar hidden">
+    <div class="edit-toolbar-inner">
+      <div class="edit-left">
+        <span class="edit-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+          Edit Mode
+        </span>
+        <span class="edit-hint">Click any text to edit · Hover cards for controls</span>
+      </div>
+      <div class="edit-right">
+        <button id="export-btn"   class="etbtn">Export Data</button>
+        <button id="reset-btn"    class="etbtn etbtn-danger">Reset</button>
+        <button id="exit-edit-btn" class="etbtn etbtn-done">Done Editing</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ MAIN ═══════════════ -->
+  <main id="main">
+
+    <!-- ── HERO ─────────────────────────────────── -->
+    <section id="hero">
+      <div class="hero-noise"></div>
+      <div class="hero-grid-lines"></div>
+      <div class="container hero-layout">
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span id="hero-eyebrow">NYU Stern School of Business</span>
+          </div>
+          <h1 class="hero-name">
+            <span class="name-line" id="hero-name-first">Mitch</span>
+            <span class="name-line italic" id="hero-name-last">Cahill</span>
+          </h1>
+          <p class="hero-tagline" id="hero-tagline">
+            Equity research, venture analysis, and product strategy — at the intersection of finance and technology.
+          </p>
+          <div class="hero-actions">
+            <a href="#experience" class="btn-hero-primary">Explore Work</a>
+            <a href="Mitch-Cahill-Resume.pdf" target="_blank" class="btn-hero-secondary" id="resume-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Resume
+            </a>
+          </div>
+        </div>
+        <div class="hero-card-wrap">
+          <div class="hero-card">
+            <div class="hc-header">
+              <div class="hc-avatar">MC</div>
+              <div class="hc-identity">
+                <div class="hc-name" id="hc-name">Mitch Cahill</div>
+                <div class="hc-title" id="hc-title">Finance & Data Science</div>
+              </div>
+              <div class="hc-status"><span class="status-dot"></span>Available</div>
+            </div>
+            <div class="hc-stats" id="hc-stats"><!-- js --></div>
+            <div class="hc-divider"></div>
+            <div class="hc-tags" id="hc-tags"><!-- js --></div>
+          </div>
+          <div class="hero-card-accent"></div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ────────────────────────────── -->
+    <section id="experience" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Work History</div>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+        <div class="timeline" id="experience-list"><!-- js --></div>
+        <div class="add-row hidden" id="add-exp-row">
+          <button class="add-btn" data-section="experience">+ Add Experience</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LEADERSHIP ────────────────────────────── -->
+    <section id="leadership" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Clubs & Organizations</div>
+          <h2 class="section-title">Leadership & Activities</h2>
+        </div>
+        <div class="cards-grid" id="leadership-list"><!-- js --></div>
+        <div class="add-row hidden" id="add-lead-row">
+          <button class="add-btn" data-section="leadership">+ Add Activity</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ─────────────────────────────── -->
+    <section id="education" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Academic Background</div>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="edu-grid" id="education-list"><!-- js --></div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ────────────────────────────────── -->
+    <section id="skills" class="section section-white">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Capabilities</div>
+          <h2 class="section-title">Skills & Interests</h2>
+        </div>
+        <div id="skills-content"><!-- js --></div>
+      </div>
+    </section>
+
+    <!-- ── PUBLISHED WORKS ───────────────────────── -->
+    <section id="works" class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Research & Writing</div>
+          <h2 class="section-title">Published Works</h2>
+        </div>
+        <div id="works-content"><!-- js --></div>
+        <div class="add-row hidden" id="add-work-row">
+          <button class="add-btn" data-section="works">+ Add Work</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ───────────────────────────────── -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <div class="contact-content" id="contact-content"><!-- js --></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ EDIT LOCK BUTTON ═══════════════ -->
+  <button id="edit-lock-btn" class="edit-lock" title="Edit Mode">
+    <svg id="lock-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+    </svg>
+  </button>
+
+  <!-- ═══════════════ PASSWORD MODAL ═══════════════ -->
+  <div id="password-modal" class="modal-overlay hidden">
+    <div class="modal-box" id="pw-modal-box">
+      <button class="modal-x" id="pw-close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h3 class="modal-heading">Edit Portfolio</h3>
+      <p class="modal-sub">Enter the owner password to enable edit mode.</p>
+      <input type="password" id="pw-input" class="modal-input" placeholder="Password" autocomplete="current-password">
+      <p class="modal-error hidden" id="pw-error">Incorrect password. Please try again.</p>
+      <button class="modal-submit" id="pw-submit">Unlock</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CARD MODAL (Add / Edit) ═══════════════ -->
+  <div id="card-modal" class="modal-overlay hidden">
+    <div class="modal-box modal-wide">
+      <button class="modal-x" id="card-modal-close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h3 class="modal-heading" id="card-modal-title">Add Entry</h3>
+      <div class="modal-form" id="card-modal-form"><!-- dynamic --></div>
+      <div class="modal-footer">
+        <button class="modal-cancel" id="card-modal-cancel">Cancel</button>
+        <button class="modal-submit" id="card-modal-save">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CONFIRM DELETE MODAL ═══════════════ -->
+  <div id="confirm-modal" class="modal-overlay hidden">
+    <div class="modal-box">
+      <h3 class="modal-heading">Delete this entry?</h3>
+      <p class="modal-sub" style="margin-bottom:28px">This action cannot be undone.</p>
+      <div class="modal-footer">
+        <button class="modal-cancel" id="confirm-cancel">Cancel</button>
+        <button class="modal-delete" id="confirm-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SCRIPTS ═══════════════ -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+</html>
