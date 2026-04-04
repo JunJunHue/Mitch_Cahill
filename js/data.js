@@ -20,17 +20,17 @@ const PORTFOLIO_DATA = {
     name:           "Mitch Cahill",
     title:          "Finance & Data Science",
     subtitle:       "NYU Stern School of Business",
-    tagline:        "Equity research, venture analysis, and product strategy — at the intersection of finance and technology.",
+    tagline:        "Equity research, venture capital, and product strategy: the intersection of finance and technology.",
     bio:            "Finance and Computing & Data Science student at NYU Stern with hands-on experience in equity research, VC due diligence, and product management. I thrive at the intersection of analytical rigor and creative thinking.",
     email:          "Mcc9930@stern.nyu.edu",
-    phone:          "(940) 242-1536",
+    phone:          "",
     location:       "New York, NY",
-    linkedin:       "",   // ← Paste your LinkedIn URL here
-    github:         "",   // ← Paste your GitHub URL here
-    twitter:        "",   // ← Paste your Twitter/X URL here
-    resumeUrl:      "Mitch-Cahill-Resume.pdf",
+    linkedin:       "https://www.linkedin.com/in/mitch-cahill-b875702b3/",
+    github:         "",
+    twitter:        "",
+    resumeUrl:      "Cahill-Mitch-Resume.pdf",
     contactHeading: "Let's Connect",
-    contactSub:     "Open to opportunities in finance, venture capital, and product strategy. Always up for a conversation.",
+    contactSub:     "Open to opportunities in finance, venture capital, and product strategy.",
   },
 
   /* ── HERO STATS (shown in the card on the right) ───────────── */
@@ -38,7 +38,7 @@ const PORTFOLIO_DATA = {
     { value: "3.9",   label: "GPA at UNT"     },
     { value: "$165",  label: "MU Price Target" },
     { value: "150+",  label: "Club Members"    },
-    { value: "3+",    label: "NYC Clubs"       },
+    { value: "1",     label: "Publication"     },
   ],
 
   /* ── EDUCATION ──────────────────────────────────────────────── */
@@ -123,6 +123,32 @@ const PORTFOLIO_DATA = {
   leadership: [
     {
       id:           "lead-1",
+      organization: "Strategic Venture Society",
+      location:     "New York, NY",
+      role:         "The Venturist",
+      period:       "Feb 2026 – Present",
+      type:         "VC/Investing",
+      bullets: [
+        "Researched analytical pieces on venture capital trends, with a focus on cybersecurity, AI, and early-stage startups on club blog column",
+        "Evaluated startup business models, market positioning, and competitive moats, particularly within the cybersecurity and enterprise SaaS sectors",
+        "Participated in weekly meetings on emerging startups and investment theses, forming perspectives based on financial analysis and market research",
+      ],
+    },
+    {
+      id:           "lead-2",
+      organization: "Business Analytics Club",
+      location:     "New York, NY",
+      role:         "Insight Team",
+      period:       "Feb 2026 – Present",
+      type:         "Technology",
+      bullets: [
+        "Collaborated on a semester-long data analytics project analyzing the impact of tennis serve performance on match outcomes using large datasets",
+        "Applied Python for data cleaning, analysis, and visualization to identify correlations between serve speed, first-serve percentage, and win probability",
+        "Presented quantitative findings during weekly meets, translating analysis into clear strategic insights supported by data-driven conclusions",
+      ],
+    },
+    {
+      id:           "lead-3",
       organization: "Product Management Club",
       location:     "New York, NY",
       role:         "Product Team",
@@ -135,7 +161,7 @@ const PORTFOLIO_DATA = {
       ],
     },
     {
-      id:           "lead-2",
+      id:           "lead-4",
       organization: "Entrepreneurial Exchange Group",
       location:     "New York, NY",
       role:         "Investing Team",
@@ -148,20 +174,7 @@ const PORTFOLIO_DATA = {
       ],
     },
     {
-      id:           "lead-3",
-      organization: "Special Situations Investment Group",
-      location:     "New York, NY",
-      role:         "Special Situations Team",
-      period:       "Oct 2025 – Dec 2025",
-      type:         "Finance",
-      bullets: [
-        "Attended weekly lectures from upperclassmen and advisors covering distressed debt, bankruptcy, and financial restructuring",
-        "Accessed networking events to deepen expertise in special situations investing beyond coursework",
-        "Analyzed distressed case studies, developing understanding of capital structure, recovery values, and investment strategies",
-      ],
-    },
-    {
-      id:           "lead-4",
+      id:           "lead-5",
       organization: "North Texas Pickleball",
       location:     "Denton, TX",
       role:         "Founder & President",
@@ -174,7 +187,7 @@ const PORTFOLIO_DATA = {
       ],
     },
     {
-      id:           "lead-5",
+      id:           "lead-6",
       organization: "Student Investment Group",
       location:     "Denton, TX",
       role:         "Junior Analyst",
@@ -190,8 +203,8 @@ const PORTFOLIO_DATA = {
 
   /* ── SKILLS ─────────────────────────────────────────────────── */
   skills: {
-    "Finance & Analysis":  ["Financial Modeling", "Equity Research", "Valuation", "DCF Analysis", "Due Diligence"],
-    "Technology":          ["Python", "Microsoft Excel", "Figma", "PitchBook", "Crunchbase"],
+    "Finance & Analysis":  ["Financial Modeling", "Equity Research", "Valuation", "Due Diligence", "PitchBook", "Crunchbase"],
+    "Technology":          ["Python", "NumPy", "Pandas", "Microsoft Excel", "Figma"],
     "Business":            ["Product Management", "Research & Analysis", "Stakeholder Analysis", "Microsoft Word"],
   },
 
@@ -201,21 +214,7 @@ const PORTFOLIO_DATA = {
     "Weightlifting", "Football", "Hiking", "Cooking & Baking", "Geography & History",
   ],
 
-  /* ── PUBLISHED WORKS ─────────────────────────────────────────
-     Add articles, research papers, white papers here.
-     Use Edit Mode or copy the example below.
-
-     Example:
-     {
-       id:          "work-1",
-       title:       "Micron Technology: HBM3E Thesis",
-       publication: "KMF Investments",
-       date:        "Sep 2025",
-       type:        "Research",        // Research | Article | Paper | White Paper | Other
-       description: "Segment-level analysis and free cash flow projections on MU...",
-       url:         "",                // Link to the piece (optional)
-     }
-  ─────────────────────────────────────────────────────────────── */
+  /* ── PUBLISHED WORKS ─────────────────────────────────────────*/
   publishedWorks: [],
 
 };
